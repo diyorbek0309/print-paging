@@ -1,64 +1,75 @@
 /** @format */
 
 body {
-	font-family: "Times New Roman", Times, serif;
-	box-sizing: border-box;
-	color: #f8f8f8;
-	background: linear-gradient(45deg, red, blue);
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  color: #f8f8f8;
+  background: linear-gradient(45deg, red, blue);
 }
 
 .container {
-	margin: 4em auto;
-	border: 2px solid black;
-	width: 50vw;
-	box-shadow: 5px 5px 5px 15px #f8f8f8;
+  margin: 4em auto;
+  border: 2px solid black;
+  width: 50vw;
+  box-shadow: 5px 5px 5px 15px #f8f8f8;
 }
 
 .sitting {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .choose_type_printer {
-	width: 250px;
-	text-align: center;
-	padding-top: 2em;
+  width: 250px;
+  text-align: center;
+  padding-top: 2em;
 }
 
 .choose_type_printer > select {
-	height: 2em;
-	width: 12em;
+  height: 2em;
+  width: 12em;
+}
+.errorMessage {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.errorMessage p {
+  color: red;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
 .btn-1 {
-	height: 2em;
-	width: 8em;
-	border-radius: 6px;
-	border: none;
-	background-color: blue;
-	color: #f8f8f8;
-	background: linear-gradient(135deg, rgb(50, 107, 160) 60%, cyan);
-	margin-left: 2em;
+  height: 2em;
+  width: 8em;
+  border-radius: 6px;
+  border: none;
+  background-color: blue;
+  color: #f8f8f8;
+  background: linear-gradient(135deg, rgb(50, 107, 160) 60%, cyan);
+  margin-left: 2em;
 }
 
 .parametr {
-	/* float: left; */
-	margin: 2em 1em 1em 1em;
+  /* float: left; */
+  margin: 2em 1em 1em 1em;
 }
 
 .parametr > input {
-	height: 2em;
-	margin: 0.5em auto;
+  height: 2em;
+  margin: 0.5em auto;
 }
 
 .text-area {
-	width: 42vw;
-	height: 10vw;
-	overflow: auto;
-	padding: 1em auto;
+  width: 42vw;
+  height: 10vw;
+  overflow: auto;
+  padding: 1em auto;
 }
 
 .textArea {
-	text-align: center;
-	margin: 0 auto 1em;
+  text-align: center;
+  margin: 0 auto 1em;
 }

@@ -10,7 +10,7 @@ body {
 .container {
 	margin: 4em auto;
 	border: 2px solid black;
-	width: 50vw;
+	width: 80vw;
 	box-shadow: 5px 5px 5px 15px #f8f8f8;
 }
 
@@ -35,17 +35,20 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+	body {
+		font-size: larger;
+	}
+
 	.choose_type_printer-2 {
 		display: block;
-		width: 90%;
+		/* width: 90%; */
 		text-align: center;
-		padding-top: 2em;
 	}
 
 	.choose_type_printer-2 > select {
-		height: 2.5em;
-		width: 13em;
-		margin: 0 auto 2em;
+		height: 2.8em;
+		width: 18.4em;
+		margin-bottom: 1em;
 	}
 	.choose_type_printer-1 {
 		display: none;
@@ -55,6 +58,23 @@ body {
 		/* float: left; */
 		/* margin: 1em 0.5em 1em 0.5em; */
 		width: 90%;
+		text-align: center;
+	}
+	.parametr > input {
+		width: 18em;
+	}
+
+	#values {
+		height: 2em;
+		width: 6em;
+		font-size: larger;
+		margin: 0 auto;
+	}
+	#front-page,
+	#back-page {
+		width: 20em;
+		height: 5em;
+		overflow: auto;
 	}
 }
 

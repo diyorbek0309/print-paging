@@ -1,18 +1,18 @@
 const firstPage = document.getElementById("firstPage");
 const lastPage = document.getElementById("lastPage");
 const values = document.getElementById("values");
-const errorMessage = document.querySelectorAll("#error-message");
+const errorMessage = document.getElementById("error-message");
 const totalPages = document.getElementById("totalPages");
 const numberOfNeeds = document.getElementById("numberOfNeeds");
 const printPageNumber = document.getElementById("printPageNumber");
 const frontPage = document.getElementById("front-page");
 const backPage = document.getElementById("back-page");
 
-function errorMessageFunc(id) {
-  errorMessage[id].style.display = "block";
+function errorMessageFunc() {
+  errorMessage.style.display = "block";
 
   setTimeout(() => {
-    errorMessage[id].style.display = "none";
+    errorMessage.style.display = "none";
   }, 7000);
 }
 
@@ -51,9 +51,9 @@ values.addEventListener("click", () => {
         backPage.value += `${item},`;
       });
     } else {
-      errorMessageFunc(1);
+      errorMessageFunc();
     }
   } else {
-    errorMessageFunc(0);
+    errorMessageFunc();
   }
 });

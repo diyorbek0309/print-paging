@@ -26,9 +26,6 @@
           <input type="number" id="firstPage" class="inNumber" /><br />
           <label for="lastPage">Oxirgi varoq</label><br />
           <input type="number" id="lastPage" class="inNumber" /><br /><br />
-          <div class="errorMessage" id="error-message">
-            <p>Varaqlar kiritilishini qaytadan tekshiring!</p>
-          </div>
           <button type="submit" id="values" class="btn-1">OK</button
           ><br /><br />
 
@@ -37,6 +34,12 @@
 
           <label for="numberOfNeeds">Yetmagan varoqlar</label><br />
           <input type="number" id="numberOfNeeds" class="inNumber" /><br />
+          <div class="errorMessage" id="error-message">
+            <p>
+              Varaqlar kiritilishini <br />
+              qaytadan tekshiring!
+            </p>
+          </div>
           <label for="printPageNumber">Qog'ozlar soni</label><br />
           <input type="number" id="printPageNumber" class="inNumber" /><br />
         </div>
@@ -48,9 +51,6 @@
       <div class="back-pages textArea">
         <p>Orqa tomon varaqlari</p>
         <textarea class="text-area" id="back-page">back pages</textarea>
-      </div>
-      <div class="errorMessage" id="error-message">
-        <p>Varaqlar kiritilishini qaytadan tekshiring!</p>
       </div>
     </div>
     <script src="app.js"></script>

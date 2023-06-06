@@ -44,11 +44,19 @@ values.addEventListener("click", () => {
         newLastPage = newLastPage - 2;
         newFirstPage = newFirstPage + 2;
       }
-      frontArr.forEach((item) => {
-        frontPage.value += `${item},`;
+      frontArr.forEach((item, i) => {
+        if (i === frontArr.length - 1) {
+          frontPage.value += `${item}`;
+        } else {
+          frontPage.value += `${item},`;
+        }
       });
-      backArr.forEach((item) => {
-        backPage.value += `${item},`;
+      backArr.forEach((item, i) => {
+        if (i === frontArr.length - 1) {
+          backPage.value += `${item}`;
+        } else {
+          backPage.value += `${item},`;
+        }
       });
     } else {
       errorMessageFunc();

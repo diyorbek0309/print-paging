@@ -78,18 +78,6 @@ body {
 	}
 }
 
-.errorMessage {
-	margin: 0;
-	padding: 0;
-	display: none;
-}
-.errorMessage p {
-	color: red;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 1rem;
-}
-
 .btn-1 {
 	height: 2em;
 	width: 8em;

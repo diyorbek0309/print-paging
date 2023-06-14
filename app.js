@@ -19,8 +19,12 @@ function errorMessageFunc() {
 values.addEventListener("click", () => {
   frontPage.value = ``;
   backPage.value = ``;
+  let newLastValue = 0;
   if (firstPage.value > 0 || lastPage.value > firstPage.value) {
-    totalPages.value = lastPage.value - firstPage.value + 1;
+    if (lastPage.value % 4 !== 0) {
+      newLastValue = +lastPage.value + 4 - (+lastPage.value % 4);
+    }
+    totalPages.value = newLastValue - +firstPage.value + 1;
     if (totalPages.value % 4 === 0) {
       numberOfNeeds.value = 0;
     } else {
@@ -30,7 +34,7 @@ values.addEventListener("click", () => {
     if (totalPages.value % 4 === 0) {
       let frontArr = [];
       let backArr = [];
-      let newLastPage = +lastPage.value;
+      let newLastPage = newLastValue;
       let newFirstPage = +firstPage.value;
       for (let i = 0; i < +totalPages.value / 4; i++) {
         frontArr.push(newLastPage);
@@ -58,10 +62,6 @@ values.addEventListener("click", () => {
           backPage.value += `${item},`;
         }
       });
-    } else {
-      errorMessageFunc();
     }
-  } else {
-    errorMessageFunc();
   }
 });

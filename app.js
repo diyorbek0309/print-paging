@@ -23,6 +23,8 @@ values.addEventListener("click", () => {
   if (firstPage.value > 0 || lastPage.value > firstPage.value) {
     if (lastPage.value % 4 !== 0) {
       newLastValue = +lastPage.value + 4 - (+lastPage.value % 4);
+    } else {
+      newLastValue = +lastPage.value;
     }
     totalPages.value = newLastValue - +firstPage.value + 1;
     if (totalPages.value % 4 === 0) {
